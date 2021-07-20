@@ -354,15 +354,20 @@ a {
 
 .our-tiles {
     display: flex;
-    width: 440px;
-    height: 430px;
+    max-width: 440px;
+    max-height: 430px;
     flex-wrap: wrap;
     align-content: space-between;
     flex-shrink: 0;
+    justify-content: center;
 }
 
 .our-tile:nth-child(2n) {
     margin-left: 30px;
+}
+
+.our-tile:nth-child(-n+2) {
+    margin-bottom: 30px;
 }
 
 .our-tile {
@@ -1305,7 +1310,33 @@ footer a {
         max-width: 575px;
     }
 
-    /* header start */
+    /* cection banner */
 
+    .section-banner:before {
+        display: none;
+    }
+
+    .section-banner {
+        background: #96BECE;
+    }
+
+    .banner-form .title {
+        font-size: 40px;
+        word-spacing: -4px;
+        padding-bottom: 25px;
+    }
+
+    .banner-description {
+        justify-content: center;
+    }
+
+    .banner-description .contact-list {
+        flex-direction: column;
+        align-items: center;
+
+    }
     
+    .contact-list li + li {
+        padding: 20px 0 0 0;
+    }
 }
