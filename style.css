@@ -1339,4 +1339,17 @@ footer a {
     .contact-list li + li {
         padding: 20px 0 0 0;
     }
+
+    .contact-list i {
+        padding-right: 15px;
+    }
+    
+    .contact-list .icon-phone:before, .contact-list .icon-map-tag:before {
+        font-size: 19px;
+    }
+
+    .contact-list a {
+        font-size: 14px;
+    }
+    
 }
