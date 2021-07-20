@@ -272,7 +272,7 @@ a {
     margin-left: -1px;
 }
 
-.banner-form .btn, .afr-form .btn {
+.banner-form .btn {
     height: 70px;
     max-width: 115px;
     width: 100%;
@@ -403,7 +403,7 @@ a {
 }
 
 .afr-title {
-    width: 475px;
+    max-width: 475px;
 }
 
 .appartment-tiles {
@@ -504,7 +504,19 @@ a {
     background-size: auto;
     padding: 10px 10px 10px 57px;
     border: none;
+    border-radius: 5px 0 0 5px;
     background-color: #fff;
+}
+
+.afr-form .btn {
+    height: 70px;
+    min-width: 115px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 #vaa {
@@ -1213,7 +1225,7 @@ footer a {
 
     /*banner*/
 
-    .icon-scroll-down, .link-down {
+    .section-banner .icon-scroll-down, .link-down {
         display: none;
     }
 
@@ -1226,7 +1238,7 @@ footer a {
     }
 
     .our-description {
-        padding: 0 0 30px 0;
+        padding: 0 0 35px 0;
         text-align: center;
         margin: 0 auto;
     }
@@ -1291,7 +1303,23 @@ footer a {
 
     /* moa end */
 
+    /* add start */
+
+    #geo-tag-2::before {
+        display: none;
+    }
+
+    #geo-tag-2 {
+        left: 19%;
+    }
+
+    /* add end */
+
     /* footer start */
+
+    .footer-subsc input {
+        min-width: 300px;
+    }
 
     .footer-links {
         width: 100%;
@@ -1310,6 +1338,10 @@ footer a {
         max-width: 575px;
     }
 
+    h2 {
+        font-size: 35px;
+    }
+
     /* cection banner */
 
     .section-banner:before {
@@ -1322,6 +1354,7 @@ footer a {
 
     .banner-form .title {
         font-size: 40px;
+        font-weight: 800;
         word-spacing: -4px;
         padding-bottom: 25px;
     }
@@ -1343,7 +1376,7 @@ footer a {
     .contact-list i {
         padding-right: 15px;
     }
-    
+
     .contact-list .icon-phone:before, .contact-list .icon-map-tag:before {
         font-size: 19px;
     }
@@ -1351,5 +1384,43 @@ footer a {
     .contact-list a {
         font-size: 14px;
     }
+    
+    /* banner end */
+
+    /* our start */
+
+    .section-our {
+        padding-top: 78px;
+    }
+
+    .our-description {
+        padding-bottom: 35px;
+    }
+
+    .our-title {
+        font-size: 35px;
+        padding-bottom: 45px;
+    }
+
+    .our-tile {
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    .numbers {
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+
+    /* afr start */
+
+    #afr-input {
+        min-width: 255px;
+    }
+
+    /* afr end */
+
+    /* add start */
+
     
 }
