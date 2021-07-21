@@ -355,7 +355,6 @@ a {
 .our-tiles {
     display: flex;
     max-width: 440px;
-    max-height: 430px;
     flex-wrap: wrap;
     align-content: space-between;
     flex-shrink: 0;
@@ -423,7 +422,6 @@ a {
 
 .pic {
     height: 380px;
-    width: 350px;
     background: #b1d7e8;
 }
 
@@ -1284,12 +1282,16 @@ footer a {
 
     /*serv start */
 
+    .serv-content {
+        justify-content: center;
+    }
+
     .services:before {
-        right: 79%;
+        display: none;
     }
 
     .shift-back-filler {
-        width: 15vh;
+        display: none;
     }
 
     /* serv end */
